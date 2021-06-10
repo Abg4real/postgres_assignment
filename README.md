@@ -21,11 +21,10 @@ SELECT * FROM fines WHERE fined_user_id = YOUR_VALUE
 ```
 UPDATE fines SET collection_status = true WHERE id = YOUR_VALUE
 ```
-6. Search For books
+6. Search For books with criterias:id, title, author, rack_number, publication_date,subject_category
 ```
 SELECT * FROM book WHERE YOUR_CRITERIA = YOUR_VALUE
 ```
-Criterias for search are: id, title, author, rack_number, publication_date,subject_category.<br>
 7. Reserve a book if not available
 ```
 INSERT INTO reserve_book_requests(book_id,requested_by) VALUES(YOUR_VALUES);
